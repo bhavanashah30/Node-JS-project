@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Aerial')
+    link(rel='stylesheet', href='/css/style.css')    
+    title Chatroom
+  body
+    h1 Chatroom
+    div
+      div.inlineAlign
+        Your name:
+          input(type="text", value="Anonymous")#name
+        br
+        form#messageForm
+          textarea(rows="4", cols="50", placeholder="Your Message!", maxlength=200)#outgoingMessage
+          input(type="button", value="Send")#send
+      div.inlineAlign.Alignment
+        b Contributors
+        br
+        div#contributors
+    div#messages
